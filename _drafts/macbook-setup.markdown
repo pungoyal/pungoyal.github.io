@@ -4,40 +4,52 @@ title:  "Macbook Setup"
 date:   2016-08-01 15:10:21 +0530
 categories: machine setup bootstrap macbook
 ---
-I have always been
+How I setup my laptop has evolved over the years. It started with taking a backup of my [dotfiles][dotfiles-wiki]{:target="_blank_"} on hard-disks to getting them put on github. I have changed multiple machines (maybe 15, if not more) ever since.
 
-## Dropbox
+The setup I have now allows me to have a new macbook up and running within minutes.
 
-### link the dotfiles
+## [![alfred]({{ site.url }}/assets/alfred.png)][alfred]{:target="_blank_"} Alfred
 
-## homebrew
+[Alfred][alfred]{:target="_blank_"} is a better replacement for the native spotlight. Though spotlight has improved over the MacOS releases, I still do not like it as my default launcher. Alfredo 
 
-### git flow
+## [![iterm]({{ site.url }}/assets/iterm2.jpg)][iterm]{:target="_blank_"} iTerm
 
-## iterm3
+[iTerm][iterm]{:target="_blank_"} is a must have native terminal replacement, so much that this is the first thing I install on a new machine. I just cannot bear to write a single word on the crap mac terminal.
+
+Best thing about this is that all my preferences, including custom shortcuts are backed up and reused instantly. More on this later.
+
+## [![homebrew]({{ site.url }}/assets/homebrew.png)][homebrew]{:target="_blank_"} homebrew
+
+[Homebrew][homebrew]{:target="_blank_"} is first thing I install on the minty fresh iterm is
+
+## [![oh-my-zsh]({{ site.url }}/assets/oh-my-zsh.png)][oh-my-zsh]{:target="_blank_"} Oh My ZSH
 
 ## zsh
 
-## Oh my zsh
-
-
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight shell %}
+ln -sf ~/Dropbox/Laptop/dotfiles/.zshrc ~/.zshrc # get the zsh config
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Dropbox
+[Dropbox][dropbox-web]{:target="_blank_"} has become a necessity. I use it to backup my files across computers. This glorified `rsync` is very helpful in instant sharing of ssh keys across machines. After downloading and setting up dropbox, I go for :
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+{% highlight shell %}
+ln -sf ~/Dropbox/Laptop/dotfiles/.zshrc ~/.zshrc # get the zsh config
+ln -s ~/Dropbox/Laptop/.ssh ~/.ssh # get the ssh keys in place
+{% endhighlight %}
+
+
+
+### link the dotfiles
+
+### link the .ssh folder
+
+### git flow
+
+
+[alfred]: https://itunes.apple.com/in/app/alfred/id405843582?mt=12
+[iterm]: https://www.iterm2.com/version3.html
+[homebrew]: http://brew.sh/
+[oh-my-zsh]: http://ohmyz.sh/
+[dotfiles]: https://en.wikipedia.org/wiki/Dot-file
+[dropbox]: https://www.dropbox.com/
