@@ -10,7 +10,7 @@ The setup I have now allows me to have a new macbook up and running within minut
 
 ## [![alfred]({{ site.url }}/assets/alfred.png)][alfred]{:target="_blank_"} Alfred
 
-[Alfred][alfred]{:target="_blank_"} is a better replacement for the native spotlight. Though spotlight has improved over the MacOS releases, I still do not like it as my default launcher. Alfredo 
+[Alfred][alfred]{:target="_blank_"} is a better replacement for the native spotlight. Though spotlight has improved over the MacOS releases, I still do not like it as my default launcher. Alfred is lightweight and simplifies mundane tasks like calculator etc. It remembers recent matches. 
 
 ## [![iterm]({{ site.url }}/assets/iterm2.jpg)][iterm]{:target="_blank_"} iTerm
 
